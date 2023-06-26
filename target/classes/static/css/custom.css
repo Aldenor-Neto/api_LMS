@@ -1,0 +1,27 @@
+.status-button {
+    width: 100px;
+    height: 40px;
+  }
+  
+  .status-button.free {
+    background-color: green;
+  }
+  
+  .status-button.occupied {
+    background-color: yellow;
+  }
+
+  .custom-search input {
+    max-width: 200px; /* Defina o tamanho desejado para o campo de pesquisa */
+}
+
+#info {
+  margin-left: 50px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+#informacoes {
+  position: relative;
+}

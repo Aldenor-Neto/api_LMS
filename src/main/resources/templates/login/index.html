@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - LMS</title>
+    <!-- <link rel="stylesheet" href="../../static/css/login-style.css"> -->
+    <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/login-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <span id="signIn">Login</span>
+        </div>
+
+        <form id="signin" action="/logar" method="POST">
+            <div>
+                <input type="email" name = "login" id="email" aria-describedby="emailHelp" placeholder="Digite seu email">
+                <i class="fas fa-envelope iEmail"></i>
+
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+                <i class="fas fa-lock iPassword"></i>
+            </div>
+            <div th:if="${erro != null}" th:text="${erro}" class="alert alert-danger" role="alert"></div>
+            <button id="login-button">Entrar</button>
+        </form>
+    </div>
+
+    <script src="../../static/js/login-script.js"></script>
+</body>
+
+</html>
